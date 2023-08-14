@@ -1,7 +1,7 @@
 import { Row, Col } from "antd";
-import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
 import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
+import { Slide } from "react-awesome-reveal";
 
 // Define the MiddleBlock component
 interface MiddleBlockProps {
@@ -21,24 +21,24 @@ const MiddleBlock = ({ title, content, button}: MiddleBlockProps) => {
 
   return (
     <MiddleBlockSection>
-      {/* Slide animation */}
       <Slide direction="up">
-        <Row justify="center" align="middle">
-          <ContentWrapper>
-            <Col lg={24} md={24} sm={24} xs={24}>
-              {/* Title */}
-              <h6>{(title)}</h6>
-              {/* Content */}
-              <Content>{(content)}</Content>
-              {/* Button */}
-              {button && (
-                <Button name="submit" onClick={() => scrollTo("mission")}>
-                  {(button)}
-                </Button>
-              )}
-            </Col>
-          </ContentWrapper>s
-        </Row>
+          {/* Content to be animated */}
+          <Row justify="center" align="middle">
+            <ContentWrapper>
+              <Col lg={24} md={24} sm={24} xs={24}>
+                {/* Title */}
+                <h6>{(title)}</h6>
+                {/* Content */}
+                <Content>{(content)}</Content>
+                {/* Button */}
+                {button && (
+                  <Button name="submit" onClick={() => scrollTo("mission")}>
+                    {(button)}
+                  </Button>
+                )}
+              </Col>
+            </ContentWrapper>
+          </Row>
       </Slide>
     </MiddleBlockSection>
   );
