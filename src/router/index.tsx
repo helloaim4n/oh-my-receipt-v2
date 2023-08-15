@@ -14,7 +14,6 @@ const Router = () => {
         {routes.map((routeItem) => {
           const PageComponent = lazy(() => import(`../pages/${routeItem.component}`));
 
-          // Handle both single string path and array of strings
           const paths = Array.isArray(routeItem.path) ? routeItem.path : [routeItem.path];
           
           return paths.map((path) => (

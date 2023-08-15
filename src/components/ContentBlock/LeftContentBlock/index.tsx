@@ -1,10 +1,10 @@
 // Import necessary functions and components from libraries and local files
 import { Row, Col } from "antd";
-import { SvgIcon } from "../../../common/SvgIcon"; // Custom SVG icon component
-import { ContentBlockProps } from "../types"; // Import types for props
+import { SvgIcon } from "../../../common/SvgIcon"; 
+import { ContentBlockProps } from "../types"; 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import { Fade } from "react-awesome-reveal"; // Component for animating content
+import { Fade } from "react-awesome-reveal"; 
 import {
   LeftContentSection,
   Content,
@@ -12,7 +12,7 @@ import {
   ServiceWrapper,
   MinTitle,
   MinPara,
-} from "./styles"; // Styled components for LeftContentBlock
+} from "./styles"; 
 
 const LeftContentBlock = ({
   icon,

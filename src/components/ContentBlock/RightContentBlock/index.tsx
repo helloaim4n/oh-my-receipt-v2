@@ -1,4 +1,3 @@
-// Importing necessary components and functions from libraries and local files
 import { Row, Col } from "antd";
 import { SvgIcon } from "../../../common/SvgIcon";
 import { Button } from "../../../common/Button";
@@ -13,7 +12,6 @@ import {
   ButtonWrapper,
 } from "./styles";
 
-// Defining a React component called RightBlock that takes in several props defined by the ContentBlockProps type
 const RightBlock = ({
   title,
   content,
@@ -30,13 +28,6 @@ const RightBlock = ({
     });
   };
 
-  // Returning a JSX expression that creates a RightBlockContainer styled component with a right-fading animation. 
-  // Inside this container, there is a grid layout created using Row and Col components. 
-  // The left column contains a ContentWrapper styled component that wraps text content, including a title (h6 element), 
-    // main content (Content styled component), and a button section wrapped in a ButtonWrapper styled component. 
-  // The button section is itself a grid layout created using an Ant Design Row component and mapped over an array of items passed in through the button prop. 
-  // Each item is rendered as a Button component containing a title and an onClick event that triggers the scrollTo function. 
-  //The right column contains an SVG icon rendered using the SvgIcon component.
   return (
     <RightBlockContainer>
       <Fade direction="right">
@@ -72,5 +63,4 @@ const RightBlock = ({
   );
 };
 
-// Exporting the RightBlock component with translation functionality provided by withTranslation()
 export default RightBlock;
