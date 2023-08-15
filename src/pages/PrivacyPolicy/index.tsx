@@ -1,6 +1,8 @@
+import { Row, Col } from "antd";
 import privacyPolicy from '../../content/PrivacyPolicy.json';
 import { MiddleBlockSection, Content, ContentWrapper } from "../../components/MiddleBlock/styles";
-import styled from 'styled-components';
+import { StyledContainer } from "../../common/Container/styles";
+import styled from "styled-components";
 
 const PrivacyPolicySection = styled(MiddleBlockSection)`
   position: relative;
@@ -29,12 +31,19 @@ const PrivacyPolicyWrapper = styled(ContentWrapper)`
 
 const PrivacyPolicy = () => {
   return (
+    <StyledContainer>
+
     <PrivacyPolicySection>
-      <PrivacyPolicyWrapper>
-        <h6>{privacyPolicy.title}</h6>
-        <PrivacyPolicyContent>{privacyPolicy.text.join('\n')}</PrivacyPolicyContent>
-      </PrivacyPolicyWrapper>
-    </PrivacyPolicySection>
+          <Row justify="center" align="middle">
+            <PrivacyPolicyWrapper>
+              <Col lg={24} md={24} sm={24} xs={24}>
+                  <h6>{privacyPolicy.title}</h6>
+            <PrivacyPolicyContent>{privacyPolicy.text.join('\n')}</PrivacyPolicyContent>
+              </Col>
+          </PrivacyPolicyWrapper>
+          </Row>
+        </PrivacyPolicySection>
+    </StyledContainer>
   );
 };
 

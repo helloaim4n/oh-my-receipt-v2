@@ -1,6 +1,8 @@
+import { Row, Col } from "antd";
 import TnC from '../../content/TermsAndConditions.json';
 import { MiddleBlockSection, Content, ContentWrapper } from "../../components/MiddleBlock/styles";
 import styled from 'styled-components';
+import { StyledContainer } from "../../common/Container/styles";
 
 const TermsAndConditionsSection = styled(MiddleBlockSection)`
   position: relative;
@@ -30,12 +32,18 @@ const TermsAndConditionsWrapper = styled(ContentWrapper)`
 
 const TermsAndConditions = () => {
   return (
+    <StyledContainer>
     <TermsAndConditionsSection>
+    <Row justify="center" align="middle">
       <TermsAndConditionsWrapper>
+      <Col lg={24} md={24} sm={24} xs={24}>
         <h6>{TnC.title}</h6>
         <TermsAndConditionsContent>{TnC.text.join('\n')}</TermsAndConditionsContent>
+        </Col>
       </TermsAndConditionsWrapper>
+      </Row>
     </TermsAndConditionsSection>
+    </StyledContainer>
   );
 };
 
