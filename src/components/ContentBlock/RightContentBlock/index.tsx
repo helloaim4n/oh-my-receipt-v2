@@ -3,6 +3,8 @@ import { Row, Col } from "antd";
 import { SvgIcon } from "../../../common/SvgIcon";
 import { Button } from "../../../common/Button";
 import { ContentBlockProps } from "../types";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { Fade } from "react-awesome-reveal";
 import {
   RightBlockContainer,

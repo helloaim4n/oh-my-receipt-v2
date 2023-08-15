@@ -1,5 +1,7 @@
 // Import necessary functions and components from libraries and local files
 import { Row, Col } from "antd";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { Slide, Zoom } from "react-awesome-reveal";
 import { ContactProps, ValidationTypeProps } from "./types"; // Import types for props and validation
 import { useForm } from "../../common/utils/useForm"; // Custom hook for form handling

@@ -1,6 +1,8 @@
 import { Row, Col } from "antd";
 import { Button } from "../../common/Button";
 import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { Slide } from "react-awesome-reveal";
 
 // Define the MiddleBlock component
