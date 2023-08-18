@@ -1,16 +1,26 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Key Features",
+  "text": "Discover how Oh My Receipt! makes receipt management effortless and organized.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
+      "title": "Effortless Receipt Capture",
+      "content": "Scan and digitize paper receipts with a single tap. Say goodbye to manual entry."
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
-      "icon": "notes.svg"
+      "title": "Smart Categorization",
+      "content": "Automatically categorize expenses based on receipt details, saving you time and hassle."
+    },
+    {
+      "title": "Real-time Expense Tracking",
+      "content": "Track expenses in real-time, stay informed about your spending habits, and make informed financial decisions."
+    },
+    {
+      "title": "Secure Cloud Storage",
+      "content": "All your receipts are securely stored in the cloud, accessible from any device whenever you need them."
+    },
+    {
+      "title": "Effortless Search and Filters",
+      "content": "Quickly locate any receipt using powerful search and filtering options. No more digging through piles of paper."
     }
   ]
 }

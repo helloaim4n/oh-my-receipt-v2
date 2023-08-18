@@ -1,4 +1,18 @@
 {
-  "title": "Ready made sections",
-  "text": "Landy comes with a set of ready to use sections to help you easily create a landing page for your own brand, with all the content your startup desires. In order to replace any dummy elements (text, image, etc..) all you need to do is go to content folder and input your real content."
+  "title": "Benefits and Value Propositions",
+  "text": "Discover the advantages of using Oh My Receipt! for efficient receipt management.",
+  "section": [
+    {
+      "title": "Time and Money Saving",
+      "content": "Spend less time organizing receipts and more time on what matters. Oh My Receipt! simplifies expense tracking, potentially saving you money along the way."
+    },
+    {
+      "title": "Effortless Organization",
+      "content": "With Oh My Receipt!, say goodbye to paper clutter. Easily categorize and manage your receipts, ensuring a stress-free and organized financial life."
+    },
+    {
+      "title": "Eco-Friendly Solution",
+      "content": "Contribute to a greener planet by embracing a paperless receipt management approach. Oh My Receipt! helps reduce paper waste and supports eco-friendly practices."
+    }
+  ]
 }
