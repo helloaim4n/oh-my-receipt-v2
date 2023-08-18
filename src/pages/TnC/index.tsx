@@ -1,4 +1,4 @@
-import { Row, Col } from "antd";
+import { Row, Col, Button} from "antd";
 import TnC from '../../content/TermsAndConditions.json';
 import { MiddleBlockSection, Content, ContentWrapper } from "../../components/MiddleBlock/styles";
 import styled from 'styled-components';
@@ -39,6 +39,9 @@ const TermsAndConditions = () => {
       <Col lg={24} md={24} sm={24} xs={24}>
         <h6>{TnC.title}</h6>
         <TermsAndConditionsContent>{TnC.text.join('\n')}</TermsAndConditionsContent>
+        <a href="/">
+              <Button type="primary" size="large">{("Back to Home")}</Button>
+        </a>
         </Col>
       </TermsAndConditionsWrapper>
       </Row>
