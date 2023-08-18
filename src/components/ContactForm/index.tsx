@@ -1,4 +1,4 @@
-// Import necessary functions and components from libraries and local files
+
 import { Row, Col } from "antd";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -32,20 +32,16 @@ const Contact = ({ title, content, id}: ContactProps) => {
 
   return (
     <ContactContainer id={id}>
-      {/* Use Ant Design's Row and Col components to layout the Contact component */}
       <Row justify="space-between" align="middle">
         <Col lg={12} md={11} sm={24} xs={24}>
           <Slide direction="left">
-            {/* Render a Block component with translated title and content */}
             <Block title={title} content={content} />
           </Slide>
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>
           <Slide direction="right">
-            {/* Use FormGroup styled component to wrap form fields */}
             <FormGroup autoComplete="off" onSubmit={handleSubmit}>
               <Col span={24}>
-                {/* Render a custom Input component for name field */}
                 <Input
                   type="text"
                   name="name"
@@ -53,11 +49,9 @@ const Contact = ({ title, content, id}: ContactProps) => {
                   value={values.name || ""}
                   onChange={handleChange}
                 />
-                {/* Render error message if name field has an error */}
                 <ValidationType type="name" />
               </Col>
               <Col span={24}>
-                {/* Render a custom Input component for email field */}
                 <Input
                   type="text"
                   name="email"
@@ -65,21 +59,17 @@ const Contact = ({ title, content, id}: ContactProps) => {
                   value={values.email || ""}
                   onChange={handleChange}
                 />
-                {/* Render error message if email field has an error */}
                 <ValidationType type="email" />
               </Col>
               <Col span={24}>
-                {/* Render a custom TextArea component for message field */}
                 <TextArea
                   placeholder="Your Message"
                   value={values.message || ""}
                   name="message"
                   onChange={handleChange}
                 />
-                {/* Render error message if message field has an error */}
                 <ValidationType type="message" />
               </Col>
-              {/* Render a custom Button component for submitting the form */}
               <ButtonContainer>
                 <Button name="submit">{("Submit")}</Button>
               </ButtonContainer>
@@ -91,5 +81,4 @@ const Contact = ({ title, content, id}: ContactProps) => {
   );
 };
 
-// Export Contact component as default export with translation functionality provided by withTranslation()
 export default Contact;

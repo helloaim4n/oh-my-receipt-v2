@@ -1,6 +1,6 @@
 // Import necessary functions and components from libraries and local files
 import { Row, Col } from "antd";
-import { SvgIcon } from "../../../common/SvgIcon"; 
+// import { SvgIcon } from "../../../common/SvgIcon"; 
 import { ContentBlockProps } from "../types"; 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -15,7 +15,6 @@ import {
 } from "./styles"; 
 
 const LeftContentBlock = ({
-  icon,
   title,
   content,
   section,
@@ -23,31 +22,22 @@ const LeftContentBlock = ({
 }: ContentBlockProps) => {
   return (
     <LeftContentSection>
-      {/* Use Fade component to animate content in from left */}
       <Fade direction="left">
-        {/* Use Ant Design's Row and Col components to layout the LeftContentBlock */}
         <Row justify="space-between" align="middle" id={id}>
-          <Col lg={11} md={11} sm={12} xs={24}>
-            {/* Render a custom SVG icon component */}
+          {/* <Col lg={11} md={11} sm={12} xs={24}>
             <SvgIcon src={icon} width="100%" height="100%" />
-          </Col>
+          </Col> */}
           <Col lg={11} md={11} sm={11} xs={24}>
-            {/* Use ContentWrapper styled component to wrap text content */}
             <ContentWrapper>
               <h6>{(title)}</h6>
               <Content>{(content)}</Content>
-              {/* Use ServiceWrapper styled component to wrap service section */}
               <ServiceWrapper>
-                {/* Use Ant Design's Row component to layout service section */}
                 <Row justify="space-between">
-                  {/* Map over each item in the section array to render a service block */}
                   {typeof section === "object" &&
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     section.map((item: any, id: number) => {
                       return (
                         <Col key={id} span={11}>
-                          {/* Render a custom SVG icon component for the service */}
-                          <SvgIcon src={item.icon} width="60px" height="60px" />
                           <MinTitle>{(item.title)}</MinTitle>
                           <MinPara>{(item.content)}</MinPara>
                         </Col>
@@ -63,5 +53,4 @@ const LeftContentBlock = ({
   );
 };
 
-// Export LeftContentBlock component as default export with translation functionality provided by withTranslation()
 export default LeftContentBlock;
