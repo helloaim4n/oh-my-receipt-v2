@@ -29,7 +29,7 @@ const Contact = ({ title, content, id}: ContactProps) => {
       </Zoom>
     );
   };
-
+  
   return (
     <ContactContainer id={id}>
       <Row justify="space-between" align="middle">

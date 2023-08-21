@@ -23,16 +23,16 @@ const LeftContentBlock = ({
   return (
     <LeftContentSection>
       <Fade direction="left">
-        <Row justify="space-between" align="middle" id={id}>
+        <Row justify="center" align="middle" id={id}>
           {/* <Col lg={11} md={11} sm={12} xs={24}>
             <SvgIcon src={icon} width="100%" height="100%" />
           </Col> */}
-          <Col lg={11} md={11} sm={11} xs={24}>
-            <ContentWrapper>
+          <ContentWrapper>
+          <Col lg={24} md={24} sm={24} xs={24}>
               <h6>{(title)}</h6>
               <Content>{(content)}</Content>
               <ServiceWrapper>
-                <Row justify="space-between">
+                <Row justify="center">
                   {typeof section === "object" &&
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     section.map((item: any, id: number) => {
@@ -45,8 +45,8 @@ const LeftContentBlock = ({
                     })}
                 </Row>
               </ServiceWrapper>
-            </ContentWrapper>
           </Col>
+          </ContentWrapper>
         </Row>
       </Fade>
     </LeftContentSection>
