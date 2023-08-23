@@ -28,7 +28,7 @@ const LeftContentBlock = ({
             <SvgIcon src={icon} width="100%" height="100%" />
           </Col> */}
           <ContentWrapper>
-          <Col lg={24} md={24} sm={24} xs={24}>
+          <Col lg={24}>
               <h6>{(title)}</h6>
               <Content>{(content)}</Content>
               <ServiceWrapper>

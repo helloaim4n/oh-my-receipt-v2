@@ -13,7 +13,6 @@ import {
   ServiceWrapper, // Add ServiceWrapper
   MinTitle,
   MinPara,
-  StyleH6,
 } from "./styles";
 
 const RightBlock = ({
@@ -37,8 +36,10 @@ const RightBlock = ({
         <Row justify="center" align="middle" id={id}>
             <ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
-              <StyleH6>{(title)}</StyleH6>
-              <Content>{(content)}</Content>  
+              <h6>{(title)}</h6>
+              <Content>{(content)}</Content>
+              </Col>
+                          </ContentWrapper>
               {/* <ButtonWrapper>
                 {typeof button === "object" &&
                   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -60,15 +61,13 @@ const RightBlock = ({
                   {typeof section === "object" &&
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     section.map((item: any, id: number) => (
-                      <Col key={id} span={11}>
+                      <Col key={id} span={12}>
                         <MinTitle>{item.title}</MinTitle>
                         <MinPara>{item.content}</MinPara>
                       </Col>
                     ))}
                 </Row>
               </ServiceWrapper>
-              </Col>
-            </ContentWrapper>
           {/* <Col lg={11} md={11} sm={12} xs={24}>
             <SvgIcon src={icon} width="100%" height="100%" />
           </Col> */}
