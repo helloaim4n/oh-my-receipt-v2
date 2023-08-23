@@ -22,7 +22,7 @@ export const Content = styled("p")`
 
 export const ContentWrapper = styled("div")`
   position: relative;
-  max-width: 540px;
+  max-width: 55rem;
 
   @media only screen and (max-width: 575px) {
     padding-top: 4rem;
@@ -31,13 +31,14 @@ export const ContentWrapper = styled("div")`
 
 export const ServiceWrapper = styled("div")`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 100%;
+  padding: 2rem 0;
 `;
 
 export const MinTitle = styled("h6")`
-  font-size: 15px;
-  line-height: 1rem;
+  font-size: 20px;
+  line-height: 19px;
   padding: 0.5rem 0;
   text-transform: uppercase;
   color: #000;
@@ -45,5 +46,8 @@ export const MinTitle = styled("h6")`
 `;
 
 export const MinPara = styled("p")`
-  font-size: 13px;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: 60px;
 `;

@@ -29,9 +29,9 @@ export const ContentWrapper = styled("div")`
   }
 `;
 
-export const StyleH6 = styled("h6")`
-  font-size: 2.5rem;
-`;
+// export const StyleH6 = styled("h6")`
+//   font-size: 2.5rem;
+// `;
 
 // export const ButtonWrapper = styled("div")`
 //   display: flex;
@@ -50,13 +50,14 @@ export const StyleH6 = styled("h6")`
 
 export const ServiceWrapper = styled("div")`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 100%;
+  padding: 2rem 0;
 `;
 
 export const MinTitle = styled("h6")`
-  font-size: 15px;
-  line-height: 1rem;
+  font-size: 20px;
+  line-height: 19px;
   padding: 0.5rem 0;
   text-transform: uppercase;
   color: #000;
@@ -64,5 +65,8 @@ export const MinTitle = styled("h6")`
 `;
 
 export const MinPara = styled("p")`
-  font-size: 13px;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: 60px;
 `;
