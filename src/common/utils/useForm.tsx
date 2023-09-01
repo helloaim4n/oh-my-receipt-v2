@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { notification } from "antd";
-// import axios from "axios";
 import { firestore } from "../../firebase";
-
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const useForm = (validate: any) => {
@@ -24,9 +22,10 @@ export const useForm = (validate: any) => {
     const isFormValid = Object.keys(validate(values)).length === 0;
   
     if (isFormValid) {
-      try {
-        await firestore.collection("messages").add(values);
-        setValues("");
+      try { 
+        await firestore.collection("contactFormSubmissions").add(values);
+
+        setValues({});
         setShouldSubmit(true);
       } catch (error) {
         console.error("Error submitting form: ", error);
