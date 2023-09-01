@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { notification } from "antd";
-import axios from "axios";
+// import axios from "axios";
+import { firestore } from "../../firebase";
+
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const useForm = (validate: any) => {
@@ -15,21 +17,27 @@ export const useForm = (validate: any) => {
     });
   };
 
-  const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
     setErrors(validate(values));
-    // Your url for API
-    const url = "";
-    if (Object.keys(values).length === 3) {
-      axios
-        .post(url, {
-          ...values,
-        })
-        .then(() => {
-          setShouldSubmit(true);
-        });
+  
+    const isFormValid = Object.keys(validate(values)).length === 0;
+  
+    if (isFormValid) {
+      try {
+        await firestore.collection("messages").add(values);
+        setValues("");
+        setShouldSubmit(true);
+      } catch (error) {
+        console.error("Error submitting form: ", error);
+      }
+    } else {
+      console.log("Please fill in all required fields.");
     }
   };
+  
+  
+  
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && shouldSubmit) {
