@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import  { lazy, Suspense } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -7,18 +7,25 @@ import { Styles } from "../styles/styles";
 
 const Router = () => {
   const location = useLocation();
-  const hideHeader = location.pathname === "/privacy-policy" || location.pathname === "/terms-and-conditions"; // Add the path of your Privacy Policy page here
+  const hideHeader =
+    location.pathname === "/privacy-policy" ||
+    location.pathname === "/terms-and-conditions";
 
   return (
-    <Suspense fallback={null}>
+    <Suspense
+      fallback={null}>
       <Styles />
-      {!hideHeader && <Header />} {/* Add this line to conditionally render the header */}
+      {!hideHeader && <Header />}
       <Routes>
         {routes.map((routeItem) => {
-          const PageComponent = lazy(() => import(`../pages/${routeItem.component}`));
+          const PageComponent = lazy(() =>
+            import(`../pages/${routeItem.component}`)
+          );
 
-          const paths = Array.isArray(routeItem.path) ? routeItem.path : [routeItem.path];
-          
+          const paths = Array.isArray(routeItem.path)
+            ? routeItem.path
+            : [routeItem.path];
+
           return paths.map((path) => (
             <Route
               key={routeItem.component + path}

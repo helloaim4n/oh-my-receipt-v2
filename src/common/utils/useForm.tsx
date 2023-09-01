@@ -37,8 +37,6 @@ export const useForm = (validate: any) => {
   };
   
   
-  
-
   useEffect(() => {
     if (Object.keys(errors).length === 0 && shouldSubmit) {
       setValues("");

@@ -20,6 +20,7 @@ const LeftContentBlock = ({
   section,
   id,
 }: ContentBlockProps) => {
+  
   return (
     <LeftContentSection>
       <Fade direction="left">
@@ -31,6 +32,8 @@ const LeftContentBlock = ({
           <Col lg={24}>
               <h6>{(title)}</h6>
               <Content>{(content)}</Content>
+              </Col>
+              </ContentWrapper>
               <ServiceWrapper>
                 <Row justify="center">
                   {typeof section === "object" &&
@@ -45,8 +48,6 @@ const LeftContentBlock = ({
                     })}
                 </Row>
               </ServiceWrapper>
-          </Col>
-          </ContentWrapper>
         </Row>
       </Fade>
     </LeftContentSection>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 import { SvgIcon } from "../SvgIcon";
 import { ScrollUpContainer } from "./styles";
 import { getScroll } from "../utils/getWindow";

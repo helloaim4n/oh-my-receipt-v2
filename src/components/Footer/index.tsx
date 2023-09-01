@@ -6,8 +6,8 @@ import {
   Title,
   Para,
   Large,
-  Chat,
-  Language,
+  // Chat,
+  // Language,
 } from "./styles";
 
 const Footer = () => {
@@ -26,14 +26,14 @@ const Footer = () => {
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Language>{("Contact")}</Language>
-              <Large to="/">{("Tell us everything")}</Large>
+              <Title>{("Contact")}</Title>
+              <Large to="mailto:aimanaizuddin30@gmail.com">{("Tell us everything")}</Large>
               <Para>
                 {(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="#chat">
+              {/* <a href="#chat">
                 <Chat>{(`Let's Chat`)}</Chat>
-              </a>
+              </a> */}
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{("Policy")}</Title>

@@ -1,4 +1,4 @@
-import{s as n,j as e}from"./index-c93b1e9e.js";import{M as t,C as o,a}from"./styles-c3e44552.js";const r="Privacy Policy",s=[`
+import{s as n,j as e,S as t,R as o,C as a}from"./index-9cf482f0.js";import{M as r,C as s,a as c}from"./styles-d35f6cdc.js";import{B as l}from"./button-489ca168.js";import"./render-fb959573.js";const d="Privacy Policy",p=[`
 Oh My Receipt! ("we", "us", or "our") is committed to protecting and respecting your privacy. This Privacy Policy ("Policy") explains what personal data we collect about individuals who visit our website ("Website"), when and why we collect it, how we use it, the conditions under which we may disclose it to others, and how we keep it secure. Please read this Policy carefully to understand our practices regarding your personal data and how we handle it.
 
 `,`WHO WE ARE
@@ -55,7 +55,7 @@ Email: [Your Email Address]
 
 ====================
 
-This Privacy Policy was last updated on 13/08/2023.`],i={title:r,text:s},c=n(t)`
+This Privacy Policy was last updated on 13/08/2023.`],i={title:d,text:p},u=n(r)`
   position: relative;
   padding: 4.5rem 0 3rem;
   text-align: center;
@@ -65,14 +65,14 @@ This Privacy Policy was last updated on 13/08/2023.`],i={title:r,text:s},c=n(t)`
   @media screen and (max-width: 1024px) {
     padding: 2rem 0 3rem;
   }
-`,l=n(o)`
+`,y=n(s)`
   padding: 0.75rem 0 0.75rem;
   white-space: pre-line;
-`,d=n(a)`
+`,h=n(c)`
   max-width: 75%;
 
   @media only screen and (max-width: 768px) {
     max-width: 100%;
 }
-`,y=()=>e.jsx(c,{children:e.jsxs(d,{children:[e.jsx("h6",{children:i.title}),e.jsx(l,{children:i.text.join(`
-`)})]})});export{y as default};
+`,v=()=>e.jsx(t,{children:e.jsx(u,{children:e.jsx(o,{justify:"center",align:"middle",children:e.jsx(h,{children:e.jsxs(a,{lg:24,md:24,sm:24,xs:24,children:[e.jsx("h6",{children:i.title}),e.jsx(y,{children:i.text.join(`
+`)}),e.jsx("a",{href:"/",children:e.jsx(l,{type:"primary",size:"large",children:"Back to Home"})})]})})})})});export{v as default};

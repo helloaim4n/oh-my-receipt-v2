@@ -1,4 +1,4 @@
-import{s as t,j as e}from"./index-c93b1e9e.js";import{M as o,C as i,a as r}from"./styles-c3e44552.js";const a="Terms & Conditions",s=[`Introduction
+import{s as t,j as e,S as o,R as i,C as r}from"./index-9cf482f0.js";import{M as s,C as a,a as c}from"./styles-d35f6cdc.js";import{B as d}from"./button-489ca168.js";import"./render-fb959573.js";const u="Terms & Conditions",l=[`Introduction
 Welcome to Oh My Receipt! (the App). By using the App, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the App.
 `,`User Accounts
 To access certain features of the App, you may be required to create a user account. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. We reserve the right to suspend or terminate accounts that violate these Terms and Conditions or engage in unauthorized or harmful activities.
@@ -21,7 +21,7 @@ We reserve the right to terminate your access to the App if you violate these Te
 These Terms and Conditions are governed by the laws of [Your Jurisdiction]. Any disputes arising from or related to these terms shall be subject to the exclusive jurisdiction of the courts in [Your Jurisdiction].
 `,`Contact Information
 If you have any questions or concerns about these Terms and Conditions, please contact us at [Contact Email].
-`],n={title:a,text:s},c=t(o)`
+`],n={title:u,text:l},h=t(s)`
   position: relative;
   padding: 4.5rem 0 3rem;
   text-align: center;
@@ -32,14 +32,14 @@ If you have any questions or concerns about these Terms and Conditions, please c
   @media screen and (max-width: 1024px) {
     padding: 2rem 0 3rem;
   }
-`,d=t(i)`
+`,p=t(a)`
 padding: 0.75rem 0 0.75rem;
 white-space: pre-line;
-`,u=t(r)`
+`,m=t(c)`
   max-width: 75%;
 
   @media only screen and (max-width: 768px) {
     max-width: 100%;
 }
-`,p=()=>e.jsx(c,{children:e.jsxs(u,{children:[e.jsx("h6",{children:n.title}),e.jsx(d,{children:n.text.join(`
-`)})]})});export{p as default};
+`,v=()=>e.jsx(o,{children:e.jsx(h,{children:e.jsx(i,{justify:"center",align:"middle",children:e.jsx(m,{children:e.jsxs(r,{lg:24,md:24,sm:24,xs:24,children:[e.jsx("h6",{children:n.title}),e.jsx(p,{children:n.text.join(`
+`)}),e.jsx("a",{href:"/",children:e.jsx(d,{type:"primary",size:"large",children:"Back to Home"})})]})})})})});export{v as default};

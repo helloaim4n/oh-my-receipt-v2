@@ -2,30 +2,26 @@ import styled from "styled-components";
 
 export const LeftContentSection = styled("section")`
   position: relative;
-  padding: 8rem 0 10rem;
+  padding: 10rem 0 8rem;
   text-align: center;
   display: flex;
   justify-content: center;
 
   @media only screen and (max-width: 1024px) {
-    padding: 8rem 0 6rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 6.5rem 0 6rem;
+    padding: 4rem 0 0;
   }
 `;
 
 export const Content = styled("p")`
-  padding: 0.75rem 0 0.75rem;
+  padding: 1.5rem 0 2rem 0;
 `;
 
 export const ContentWrapper = styled("div")`
   position: relative;
-  max-width: 55rem;
+  max-width: 540px;
 
   @media only screen and (max-width: 575px) {
-    padding-top: 4rem;
+    padding-top: 0;
   }
 `;
 
@@ -48,6 +44,11 @@ export const MinTitle = styled("h6")`
 export const MinPara = styled("p")`
   font-size: 20px;
   margin: 10px;
-  padding: 10px;
+  padding: 0.5rem 0;
   margin-bottom: 60px;
+  justify-content: center;
+
+  @media only screen and (max-width: 575px) {
+    font-size: 17px;
+    padding: 0;
 `;

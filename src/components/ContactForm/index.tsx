@@ -11,7 +11,7 @@ import Block from "../Block"; // Component for rendering a block of content
 import Input from "../../common/Input"; // Custom input component
 import TextArea from "../../common/TextArea"; // Custom text area component
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles"; // Styled components for Contact component
-import { firestore } from "../../firebase";
+
 
 const Contact = ({ title, content, id}: ContactProps) => {
   // Destructure props and initialize state using custom useForm hook and validation rules
