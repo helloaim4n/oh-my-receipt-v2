@@ -29,13 +29,13 @@ export const ServiceWrapper = styled("div")`
   display: flex;
   justify-content: space-around;
   max-width: 100%;
-  padding: 2rem 0;
+  padding: 0;
 `;
 
 export const MinTitle = styled("h6")`
   font-size: 20px;
   line-height: 19px;
-  padding: 0.5rem 0;
+  padding: 0;
   text-transform: uppercase;
   color: #000;
   font-family: "Motiva Sans Light", sans-serif;

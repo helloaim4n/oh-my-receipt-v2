@@ -14,6 +14,11 @@ const routes = [
     exact: true,
     component: "TnC",
   },
+  {
+    path: "/404",
+    exact: true,
+    component: "NotFound",
+  }
 ];
 
 export default routes;

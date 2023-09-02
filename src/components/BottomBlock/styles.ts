@@ -21,7 +21,7 @@ export const ContentWrapper = styled("div")`
   max-width: 540px;
 
   @media only screen and (max-width: 575px) {
-    padding-top: 0.5rem;
+    padding-top: 0;
   }
 `;
 
@@ -29,7 +29,7 @@ export const ServiceWrapper = styled("div")`
   display: flex;
   justify-content: center;
   max-width: 100%;
-  padding: 2rem 0;
+  padding: 0;
   text-align: center;
 `;
 
