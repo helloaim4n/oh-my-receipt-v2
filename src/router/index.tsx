@@ -9,6 +9,7 @@ import NotFound from "../pages/NotFound";
 const Router = () => {
   const { pathname } = useLocation();
   const isNotFoundPage = useMemo(() => pathname === "/404", [pathname]);
+  const isHideHeaderFooterPage = useMemo(() => ["/privacy-policy", "/terms-and-conditions"].includes(pathname), [pathname]);
   
   const routeComponents = useMemo(() => routes.map((routeItem) => {
     const PageComponent = lazy(() => import(`../pages/${routeItem.component}`));
@@ -24,7 +25,7 @@ const Router = () => {
     <NotFound /> :
     <Suspense fallback={null}>
       <Styles />
-      <Header />
+      {!isHideHeaderFooterPage && <Header />}
         <Routes>
           <Route path="*" element={<Navigate to="/404" />} /> {/* Redirect to 404 page when user enter wrong URL */}
           {routeComponents}
