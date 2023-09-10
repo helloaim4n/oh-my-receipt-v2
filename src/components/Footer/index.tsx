@@ -6,8 +6,6 @@ import {
   Title,
   Para,
   Large,
-  // Chat,
-  // Language,
 } from "./styles";
 
 const Footer = () => {
@@ -26,7 +24,7 @@ const Footer = () => {
         <Container>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
-              <Title>{("Contact")}</Title>
+              <Title>{("📞Contact")}</Title>
               <Large to="mailto:aimanaizuddin30@gmail.com">{("Tell us everything")}</Large>
               <Para>
                 {(`Do you have any question? Feel free to reach out.`)}
@@ -36,7 +34,7 @@ const Footer = () => {
               </a> */}
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
-              <Title>{("Policy")}</Title>
+              <Title>{("📜Policy")}</Title>
               <Large to="/privacy-policy" onClick={handleLinkClick('/privacy-policy')}>
                 {("Privacy")}
               </Large>

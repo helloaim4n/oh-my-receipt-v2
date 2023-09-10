@@ -1,4 +1,4 @@
-import{s as t,j as e,R as r,C as s}from"./index-9cf482f0.js";import{$ as p}from"./module-2676d061.js";const x=t("section")`
+import{s as t,j as e,R as r,C as s}from"./index-0320931c.js";import{$ as p}from"./module-0d6883c0.js";const x=t("section")`
   position: relative;
   padding: 3rem 0 3rem;
   text-align: center;
@@ -15,13 +15,13 @@ import{s as t,j as e,R as r,C as s}from"./index-9cf482f0.js";import{$ as p}from"
   max-width: 540px;
 
   @media only screen and (max-width: 575px) {
-    padding-top: 0.5rem;
+    padding-top: 0;
   }
 `,h=t("div")`
   display: flex;
   justify-content: center;
   max-width: 100%;
-  padding: 2rem 0;
+  padding: 0;
   text-align: center;
 `,j=t("h6")`
   font-size: 20px;

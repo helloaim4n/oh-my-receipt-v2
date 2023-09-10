@@ -1,33 +1,47 @@
-import { Row, Col, Button } from "antd";
+import { Row, Col } from "antd";
 import privacyPolicy from '../../content/PrivacyPolicy.json';
-import { MiddleBlockSection, Content, ContentWrapper } from "../../components/MiddleBlock/styles";
 import { StyledContainer } from "../../common/Container/styles";
+import { StyledButton } from "../../common/Button/styles";
 import styled from "styled-components";
 
-const PrivacyPolicySection = styled(MiddleBlockSection)`
+const PrivacyPolicySection = styled.section`
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 4.5rem 0 3rem;
   text-align: center;
-  display: flex;
-  justify-content: center;
 
   @media screen and (max-width: 1024px) {
     padding: 2rem 0 3rem;
   }
 `;
 
-const PrivacyPolicyContent = styled(Content)`
+// Styled component for the Terms and Conditions content
+const PrivacyPolicyContent = styled.p`
+  font-family: 'Handjet', sans-serif;
   padding: 0.75rem 0 0.75rem;
   white-space: pre-line;
-`;
+  text-align: justify;
+  text-justify: inter-word;`;
 
-const PrivacyPolicyWrapper = styled(ContentWrapper)`
+// Styled component for the Terms and Conditions wrapper
+const PrivacyPolicyWrapper = styled.div`
   max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; 
+  background-color: #f5f5f5;
+  padding: 2rem;
 
   @media only screen and (max-width: 768px) {
     max-width: 100%;
-}
+    padding-bottom: 1;
+  }
 `;
+
 
 const PrivacyPolicy = () => {
   return (
@@ -39,7 +53,7 @@ const PrivacyPolicy = () => {
                   <h6>{privacyPolicy.title}</h6>
             <PrivacyPolicyContent>{privacyPolicy.text.join('\n')}</PrivacyPolicyContent>
             <a href="/">
-              <Button type="primary" size="large">{("Back to Home")}</Button>
+              <StyledButton type="primary" size="large">{("Back to Home")}</StyledButton>
             </a>
               </Col>
           </PrivacyPolicyWrapper>

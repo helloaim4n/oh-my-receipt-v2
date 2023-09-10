@@ -7,6 +7,7 @@ import { ContentBlockProps } from "../types";
 import { Fade } from "react-awesome-reveal"; 
 import {
   LeftContentSection,
+  // ContentTitle,
   Content,
   ContentWrapper,
   ServiceWrapper,
