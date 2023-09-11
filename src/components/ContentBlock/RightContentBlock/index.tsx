@@ -21,7 +21,7 @@ const RightBlock = ({
   icon,
   // button,
   // section,
-  // id,
+  id,
 }: ContentBlockProps) => {
 
   // const scrollTo = (id: string) => {
@@ -32,7 +32,7 @@ const RightBlock = ({
   // };
 
   return (
-    <RightBlockContainer>
+    <RightBlockContainer id={id}>
       <Fade direction="right">
         <Row justify="center" align="middle" >
         <Col lg={11} md={11} sm={12} xs={24}>
