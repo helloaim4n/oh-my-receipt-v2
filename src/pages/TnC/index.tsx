@@ -24,7 +24,6 @@ const TermsAndConditionsSection = styled.section`
 
 // Styled component for the Terms and Conditions content
 const TermsAndConditionsContent = styled.p`
-  font-family: 'Handjet', cursive;
   padding: 0.75rem 0 0.75rem;
   white-space: pre-line;
   text-align: justify;
