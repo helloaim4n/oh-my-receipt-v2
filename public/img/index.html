@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Not Found</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('/img/ErrorPage.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-size: 2em;
+    }
+    @media only screen and (max-width: 600px) {
+      body {
+        padding: 25% 10% 0 10%;
+        font-size: 15px;
+      }
+    }
+    h1 {
+      font-size: 4em;
+      text-shadow: 2px 2px 4px white;
+      text-shadow: 0 0 5px white, 0 0 10px white;
+      animation: 1s fadeIn ease-out;
+    }
+    @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+        text-align: center;
+        text-shadow: 1px 1px 2px white;
+      }
+    }
+    p {
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px white;
+      text-shadow: 0 0 5px white, 0 0 10px white;
+      animation: 1s fadeIn ease-out;
+    }
+    @media only screen and (max-width: 600px) {
+      p {
+        font-size: 15px;
+        text-align: center;
+        text-shadow: 1px 1px 2px white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>{notFoundPage.title}</h1>
+  <p>{notFoundPage.text}</p>
+</body>
+</html>

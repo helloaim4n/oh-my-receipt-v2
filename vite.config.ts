@@ -7,6 +7,7 @@ export default defineConfig({
   base: "/",
   plugins: [react(), dynamicImport()],
   build: {
-    outDir: "build",
+    sourcemap: false,
+    outDir: "dist",
   },
 });

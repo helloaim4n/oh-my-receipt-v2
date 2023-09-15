@@ -1,0 +1,14 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Deny access to the /img/ directory and all its contents.
+    match /img/{allPaths=**} {
+      allow read, write: if false; // Deny all read and write access.
+    }
+
+    // ... Other storage rules for different directories ...
+
+    // Allow access to other files and directories if needed.
+    // For example, you can add additional match blocks here for other directories.
+  }
+}
