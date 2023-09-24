@@ -22,19 +22,19 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         // button={IntroContent.button}
-        icon="introV2.jpg"
+        icon="bills.png"
         id="intro"
       />
       <MiddleBlock        
         title={MiddleBlockContent.title}
-        content={MiddleBlockContent.text}
+        content={MiddleBlockContent.text}      
       />
       <ContentBlock
         type="left"
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon=""
+        icon="feature.png"
         id="about"
       />
       <BottomBlock

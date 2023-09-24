@@ -51,5 +51,6 @@ export const MinPara = styled("p")`
   @media only screen and (max-width: 575px) {
     font-size: 17px;
     padding: 0;
+    text-align: justify;
   }
 `;

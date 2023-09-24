@@ -41,7 +41,7 @@ const Header = () => {
           <Span>{("Features")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>{("How It Works")}</Span>
+          <Span>{("Why Us?")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => {
             const newWindow = window.open('https://forms.gle/dtmLzxGAE47GXQXX7', '_blank', 'noopener,noreferrer');

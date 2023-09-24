@@ -7,18 +7,20 @@ import { ContentBlockProps } from "../types";
 import { Fade } from "react-awesome-reveal"; 
 import {
   LeftContentSection,
-  // ContentTitle,
+  ContentTitle,
   Content,
   ContentWrapper,
   ServiceWrapper,
   MinTitle,
   MinPara,
 } from "./styles"; 
+import { SvgIcon } from "../../../common/SvgIcon";
 
 const LeftContentBlock = ({
   title,
   content,
   section,
+  icon,
   id,
 }: ContentBlockProps) => {
   
@@ -26,12 +28,12 @@ const LeftContentBlock = ({
     <LeftContentSection>
       <Fade direction="left">
         <Row justify="center" align="middle" id={id}>
-          {/* <Col lg={11} md={11} sm={12} xs={24}>
+          <Col lg={8} md={8} sm={9} xs={15}>
             <SvgIcon src={icon} width="100%" height="100%" />
-          </Col> */}
+          </Col>
           <ContentWrapper>
-          <Col lg={24}>
-              <h6>{(title)}</h6>
+          <Col lg={20}>
+              <ContentTitle>{(title)}</ContentTitle>
               <Content>{(content)}</Content>
               </Col>
               </ContentWrapper>
@@ -41,7 +43,7 @@ const LeftContentBlock = ({
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     section.map((item: any, id: number) => {
                       return (
-                        <Col key={id} span={11}>
+                        <Col key={id} span={10} style={{ margin: "14px"}}>
                           <MinTitle>{(item.title)}</MinTitle>
                           <MinPara>{(item.content)}</MinPara>
                         </Col>

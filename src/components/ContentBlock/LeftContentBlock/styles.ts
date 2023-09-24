@@ -8,28 +8,43 @@ export const LeftContentSection = styled("section")`
   justify-content: center;
 
   @media only screen and (max-width: 1024px) {
-    padding: 4rem 0 0;
+    padding: 4rem 0 4rem;
   }
 `;
+
+
+export const ContentTitle = styled("h6")`
+`
 
 export const Content = styled("p")`
   padding: 1.5rem 0 2rem 0;
 `;
 
 export const ContentWrapper = styled("div")`
+  margin-left: 10rem;
+  margin-top: 10rem;
   position: relative;
   max-width: 540px;
 
   @media only screen and (max-width: 575px) {
-    padding-top: 0;
+    padding-top: 2rem;
+    margin-left: 0;
+    margin-top: 0;
   }
 `;
 
 export const ServiceWrapper = styled("div")`
+  margin-top: 5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 100%;
   padding: 0;
+
+  @media only screen and (max-width: 575px) {
+    margin-top: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 export const MinTitle = styled("h6")`
@@ -37,7 +52,7 @@ export const MinTitle = styled("h6")`
   line-height: 19px;
   padding: 0;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
   font-family: "Motiva Sans Light", sans-serif;
 `;
 
@@ -50,6 +65,6 @@ export const MinPara = styled("p")`
 
   @media only screen and (max-width: 575px) {
     font-size: 17px;
+    margin:10px;
     padding: 0;
-    text-align: center;
-    text-justify: inter-word;`;
+    text-align: justify;`

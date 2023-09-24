@@ -19,10 +19,13 @@ export const Content = styled("p")`
 
 export const ContentWrapper = styled("div")`
   position: relative;
+  right: 5rem;
   max-width: 540px;
 
   @media only screen and (max-width: 575px) {
     padding-top: 4rem;
+    margin-bottom: 4rem;
+    right: 0;
   }
 `;
 

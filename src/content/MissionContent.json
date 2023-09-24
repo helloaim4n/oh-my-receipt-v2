@@ -1,14 +1,14 @@
 {
-  "title": "Benefits and Value Propositions",
+  "title": "Value & Benefits",
   "text": "Learn how Oh My Receipt! can help you stay organised with your receipts.",
   "section": [
     {
-      "title": "Effortless Organization",
-      "content": "With Oh My Receipt!, say goodbye to paper clutter. Easily categorize and manage your receipts, ensuring a stress-free and organized financial life."
+      "title": "Snap or Select",
+      "content": "Whether you're snapping a fresh receipt or selecting one from your gallery, 'Oh My Receipt!' ensures quick and secure saving to the database."
     },
     {
-      "title": "Eco-Friendly Solution",
-      "content": "Contribute to a greener planet by embracing a paperless receipt management approach. Oh My Receipt! helps reduce paper waste and supports eco-friendly practices."
+      "title": "PDF Conversion On-the-Go",
+      "content": "Making a claim? Easily convert your stored receipts into PDF format, making the submission process more convenient than ever."
     }
   ]
 }

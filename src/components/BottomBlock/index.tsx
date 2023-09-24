@@ -30,11 +30,11 @@ const BottomBlock = ({
               </Col>
             </ContentWrapper>
             <ServiceWrapper> 
-                <Row justify="center">
+                <Row justify="center" gutter={20}>
                   {typeof section === "object" &&
                     // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     section.map((item: any, id: number) => (
-                      <Col key={id} span={11}>
+                      <Col key={id} span={11} >
                         <MinTitle>{item.title}</MinTitle>
                         <MinPara>{item.content}</MinPara>
                       </Col>
