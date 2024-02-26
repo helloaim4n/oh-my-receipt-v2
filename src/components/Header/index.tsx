@@ -43,12 +43,6 @@ const Header = () => {
         <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <Span>{("Why Us?")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => {
-            const newWindow = window.open('https://forms.gle/dtmLzxGAE47GXQXX7', '_blank', 'noopener,noreferrer');
-            if (newWindow) newWindow.opener = null;
-        }}>
-            <Span>Sign up for Beta</Span>
-        </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={() => scrollTo("contact")}
