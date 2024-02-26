@@ -27,7 +27,7 @@ const Router = () => {
       <Styles />
       {!isHideHeaderFooterPage && <Header />}
         <Routes>
-          <Route path="*" element={<Navigate to="/404" />} /> {/* Redirect to 404 page when user enter wrong URL */}
+          <Route path="*" element={<Navigate to="/404" />} />
           {routeComponents}
         </Routes>
       <Footer />
