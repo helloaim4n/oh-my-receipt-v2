@@ -29,24 +29,24 @@ export const ContentWrapper = styled("div")`
   }
 `;
 
-// export const StyleH6 = styled("h6")`
-//   font-size: 2.5rem;
-// `;
+export const StyleH6 = styled("h6")`
+  font-size: 2.5rem;
+`;
 
-// export const ButtonWrapper = styled("div")`
-//   display: flex;
-//   justify-content: center;
-//   max-width: 100%;
-//   align-items: center;
+export const ButtonWrapper = styled("div")`
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  align-items: center;
 
-//   @media screen and (min-width: 1024px) {
-//     max-width: 80%;
-//   }
+  @media screen and (min-width: 1024px) {
+    max-width: 80%;
+  }
 
-//   button:last-child {
-//     margin-left: 20px;
-//   }
-// `;
+  button:last-child {
+    margin-left: 20px;
+  }
+`;
 
 export const ServiceWrapper = styled("div")`
   display: flex;
