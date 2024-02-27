@@ -1,17 +1,26 @@
 import styled from "styled-components";
 
 export const LeftContentSection = styled("section")`
+  flex: 1;
   position: relative;
-  padding: 10rem 0 8rem;
+  padding: 7.5rem 0 8rem;
   text-align: center;
   display: flex;
   justify-content: center;
+  flex-grow: 1; 
 
-  @media only screen and (max-width: 1024px) {
-    padding: 4rem 0 4rem;
+  @media only screen and (max-width: 1200px) {
+    padding: 4rem 0 3rem;
+  }
+
+  @media only screen and (max-width: 575px) {
+    padding: 4rem 0 3rem;
+  }
+
+    @media only screen and (max-width: 375px) {
+    padding: 4rem 0 3rem;
   }
 `;
-
 
 export const ContentTitle = styled("h6")`
 `
@@ -67,4 +76,6 @@ export const MinPara = styled("p")`
     font-size: 17px;
     margin:10px;
     padding: 0;
-    text-align: justify;`
+    text-align: justify;
+  }
+`;

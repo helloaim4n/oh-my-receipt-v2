@@ -1,15 +1,21 @@
 import styled from "styled-components";
 
 export const RightBlockContainer = styled("section")`
+  flex: 1;
   position: relative;
-  padding: 7.5rem 0 3rem;
+  padding: 10rem 0 3rem;
+  flex-grow: 1;
 
-  @media only screen and (max-width: 1024px) {
-    padding: 4rem 0 4rem;
+  @media only screen and (max-width: 1200px) {
+    padding: 4rem 0 3rem;
   }
 
-  @media only screen and (max-width: 768px) {
-    padding: 0.5rem 0 6rem;
+  @media only screen and (max-width: 575px) {
+    padding: 1rem 0 3rem;
+  }
+
+    @media only screen and (max-width: 375px) {
+    padding: 0 0 2rem;
   }
 `;
 
@@ -22,9 +28,13 @@ export const ContentWrapper = styled("div")`
   right: 5rem;
   max-width: 540px;
 
+  @media only screen and (max-width: 1200px) {
+    right: 2rem;
+  }
+
   @media only screen and (max-width: 575px) {
-    padding-top: 4rem;
-    margin-bottom: 4rem;
+    padding-top: 2.5rem;
+    margin-bottom: 2rem;
     right: 0;
   }
 `;
@@ -36,24 +46,23 @@ export const StyleH6 = styled("h6")`
 export const ButtonWrapper = styled("div")`
   display: flex;
   justify-content: center;
-  max-width: 100%;
+  max-width: 80%;
   align-items: center;
 
-  @media screen and (min-width: 1024px) {
-    max-width: 80%;
-  }
-
   button:last-child {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 `;
 
 export const ServiceWrapper = styled("div")`
   display: flex;
   justify-content: center;
-  max-width: 100%;
-  padding: 2rem 0;
+  max-width: 80%;
   text-align: center;
+
+  @media only screen and (max-width: 575px) {
+    flex-direction: column;
+  }
 `;
 
 export const MinTitle = styled("h6")`
@@ -70,7 +79,6 @@ export const MinPara = styled("p")`
   margin: 10px;
   padding: 10px;
   margin-bottom: 60px;
-  justify-content: center;
 
   @media only screen and (max-width: 575px) {
     font-size: 17px;
